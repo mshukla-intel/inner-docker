@@ -1,6 +1,7 @@
 FROM python:latest
 WORKDIR /app
 RUN pwd
+RUN ls
 COPY requirements.txt /app
 RUN pip3 install -r requirements.txt --no-cache-dir
 COPY . /app
